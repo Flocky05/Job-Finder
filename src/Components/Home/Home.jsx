@@ -1,4 +1,6 @@
 import img from "../../assets/images/user.png"
+import Companies from "../Companies/Companies";
+import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
                 <img className="p-10" src={img} alt="" />
             </div>
             <JobCategoryList></JobCategoryList>
+            <FeaturedJobs></FeaturedJobs>
+            <Companies></Companies>
         </div>
     );
 };
