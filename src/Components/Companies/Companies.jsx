@@ -6,12 +6,12 @@ import img4 from "../../assets/logo/netflix.png"
 import img5 from "../../assets/logo/tesla.png"
 const Companies = () => {
     return (
-        <div className="grid grid-cols-5 p-20">
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
-            <img src={img5} alt="" />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-20 justify-items-center">
+            <img className="p-3" src={img1} alt="" />
+            <img className="p-3" src={img2} alt="" />
+            <img className="p-3" src={img3} alt="" />
+            <img className="p-3" src={img4} alt="" />
+            <img className="p-3" src={img5} alt="" />
         </div>
     );
 };
