@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link to="/appliedJobs"><h3 className="text-lg">Applied Jobs</h3></Link>
                 <Link to="/blog"><h3 className="text-lg">Blog</h3></Link>
             </div>
-            <button className="px-6 py-2 rounded-lg text-white text-center bg-indigo-600">Star Applying</button>
+            <button className="px-6 py-2 rounded-lg text-white text-center bg-gradient-to-r from-cyan-500 to-blue-500 ">Star Applying</button>
         </div>
     );
 };
