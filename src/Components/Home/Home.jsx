@@ -1,9 +1,17 @@
+import { useContext, useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
 import img from "../../assets/images/user.png"
+import { Context } from "../../Context/JobContext";
 import Companies from "../Companies/Companies";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
 
 const Home = () => {
+    const jobs=useLoaderData();
+    const {setJob}=useContext(Context);
+    useEffect(()=>{
+        setJob(jobs);
+    },[]);
     return (
         <div>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
@@ -17,7 +25,9 @@ const Home = () => {
                 <img className="p-10" src={img} alt="" />
             </div>
             <JobCategoryList></JobCategoryList>
-            <FeaturedJobs></FeaturedJobs>
+            <FeaturedJobs
+            jobs={jobs}
+            ></FeaturedJobs>
             <Companies></Companies>
         </div>
     );

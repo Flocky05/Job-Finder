@@ -10,6 +10,8 @@ import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/Applied Jobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
+import JobDetails from './Components/JobDetails/JobDetails';
+import JobContext from './Context/JobContext';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('jobs.json')
       },
       {
         path:"/statistics",
@@ -31,12 +34,18 @@ const router = createBrowserRouter([
       {
         path:"/blog",
         element:<Blog></Blog>
+      },
+      {
+        path:"/jobDetails",
+        element:<JobDetails></JobDetails>
       }
     ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <JobContext>
+      <RouterProvider router={router} />
+    </JobContext>
   </React.StrictMode>,
 )
