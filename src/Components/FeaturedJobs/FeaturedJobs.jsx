@@ -1,4 +1,5 @@
 import { useContext} from "react";
+import { Link } from "react-router-dom";
 import { Context } from "../../Context/JobContext.jsx";
 import Job from "../Job/Job.jsx";
 
@@ -19,7 +20,7 @@ const FeaturedJobs = () => {
            }
            </div>
            <div className="grid grid-cols-1 justify-items-center">
-                <button className="px-6 py-2 rounded-lg text-white text-center bg-gradient-to-r from-cyan-500 to-blue-500 mt-4 ">See All Jobs</button>
+                <Link to="/" className="px-6 py-2 rounded-lg text-white text-center bg-gradient-to-r from-cyan-500 to-blue-500 mt-4 inline-block">See All Jobs</Link>
            </div>
         </div>
     );
