@@ -4,6 +4,7 @@ import img from "../../assets/images/user.png"
 import { Context } from "../../Context/JobContext";
 import Companies from "../Companies/Companies";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+import JobCamping from "../JobCamping/JobCamping";
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
             jobs={jobs}
             ></FeaturedJobs>
             <Companies></Companies>
+            <JobCamping></JobCamping>
         </div>
     );
 };
