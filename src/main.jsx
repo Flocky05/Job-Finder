@@ -14,6 +14,7 @@ import JobDetails from './Components/JobDetails/JobDetails';
 import JobContext from './Context/JobContext';
 import AllJobs from './Components/AllJobs/AllJobs';
 import Exchange from './Components/Exchange/Exchange';
+import Login from './Components/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path:"/exchange",
         element:<Exchange></Exchange>
+      },
+      {
+        path:"/login",
+        element:<Login></Login>
       }
     ]
   },
