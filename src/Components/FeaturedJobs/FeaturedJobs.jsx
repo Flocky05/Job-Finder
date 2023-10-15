@@ -6,7 +6,6 @@ import Job from "../Job/Job.jsx";
 
 const FeaturedJobs = () => {
     const {jobs}=useContext(Context);
-    
     return (
         <div>
             <h2 className="text-4xl font-semibold p-10 text-center">Featured Jobs</h2>
@@ -20,7 +19,7 @@ const FeaturedJobs = () => {
            }
            </div>
            <div className="grid grid-cols-1 justify-items-center">
-                <Link to="/" className="px-6 py-2 rounded-lg text-white text-center bg-gradient-to-r from-cyan-500 to-blue-500 mt-4 inline-block">See All Jobs</Link>
+                <Link to="/alljobs" className="px-6 py-2 rounded-lg text-white text-center bg-gradient-to-r from-cyan-500 to-blue-500 mt-4 inline-block">See All Jobs</Link>
            </div>
         </div>
     );
