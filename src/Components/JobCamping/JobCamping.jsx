@@ -6,26 +6,23 @@ const JobCamping = () => {
     return (
         <div>
             <h2 className="text-center text-3xl p-10 uppercase font-bold">JOb <span className="text-blue-400">Camping</span> 2023</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                <div className=" bg-blue-100 m-10  p-10  rounded-md">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className=" m-10  rounded-md relative">
                     <img src={img1} alt="" />
                     <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequatur inventore modi at error aspernatur voluptates sit iure iste impedit.</p>
-                        <button className="bg-blue-500 px-6 py-2 rounded-lg text-white mt-3">learn More</button>
+                    <h2 className="text-3xl font-bold text-blue-500 absolute -mt-10 ml-8 z-10">Join Our New <span className="text-white">Placement</span> </h2>
                     </div>
                 </div>
-                <div className=" bg-blue-100 m-10  p-10  rounded-md">
+                <div className="  m-10 rounded-md relative">
                     <img src={img2} alt="" />
                     <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequatur inventore modi at error aspernatur voluptates sit iure iste impedit.</p>
-                        <button className="bg-blue-500 px-6 py-2 rounded-lg text-white mt-3">learn More</button>
+                    <h2 className="text-3xl font-bold text-white absolute -mt-10 ml-8 z-10">Join Our New <span className="text-blue-500">Project</span> </h2>
                     </div>
                 </div>
-                <div className=" bg-blue-100 m-10  p-10  rounded-md">
-                    <img src={img3} alt="" />
+                <div className="m-10  rounded-md relative">
+                    <img className="" src={img3} alt="" />
                     <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequatur inventore modi at error aspernatur voluptates sit iure iste impedit.</p>
-                        <button className="bg-blue-500 px-6 py-2 rounded-lg text-white mt-3">learn More</button>
+                        <h2 className="text-3xl font-bold text-blue-500 absolute -mt-10 ml-8 z-10">Join <span className="text-white">Our New</span> Session</h2>
                     </div>
                 </div>
             </div>
