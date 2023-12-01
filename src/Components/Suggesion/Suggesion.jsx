@@ -11,9 +11,9 @@ const Suggesion = () => {
                     <h3>waiting for?</h3>
                 </div>
                 <p>come and join with us, and get a different experiance</p>
-                <div className="flex items-center gap-3">
-                    <Link to="/" className="text-blue-400 mt-3 inline-block">Learn more</Link>
-                    <img src={img2} alt="" />
+                <div className="flex justify-items-center gap-5 ">
+                    <Link to="/" className="text-blue-400 mt-3 inline-block text-xl">Learn more</Link>
+                    <img className="mt-3" src={img2} alt="" />
                 </div>
             </div>
             <img src={img} alt="" />
