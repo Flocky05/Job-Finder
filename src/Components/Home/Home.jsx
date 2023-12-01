@@ -7,6 +7,7 @@ import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import JobCamping from "../JobCamping/JobCamping";
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
 import Suggesion from "../Suggesion/Suggesion";
+import Success from "../Success/Success";
 
 const Home = () => {
     const jobs=useLoaderData();
@@ -33,6 +34,7 @@ const Home = () => {
             <Companies></Companies>
             <JobCamping></JobCamping>
             <Suggesion></Suggesion>
+            <Success></Success>
         </div>
     );
 };
